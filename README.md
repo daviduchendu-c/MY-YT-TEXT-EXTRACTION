@@ -1,4 +1,4 @@
-##Creator style chatbot
+## Creator style chatbot
 
 Turns the scraped channel transcripts into a small, locally-runnable model that talks in the
 creator's voice — a direct, no-nonsense relationship/dating coach who addresses men, leans on
