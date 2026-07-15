@@ -1,4 +1,4 @@
-# FlourishWithLaurin-style chatbot
+#Creator style chatbot
 
 Turns the scraped channel transcripts into a small, locally-runnable model that talks in the
 creator's voice — a direct, no-nonsense relationship/dating coach who addresses men, leans on
@@ -6,7 +6,7 @@ evolutionary-psych/biology framing, breaks advice into numbered points, and clos
 motivational sign-off.
 
 Pipeline: build a training dataset from the transcripts -> fine-tune a small open model for free
-on Google Colab's GPU -> run the fine-tuned model locally with Ollama -> chat with it.
+On Google Colab's GPU -> run the fine-tuned model locally with Ollama -> chat with it.
 
 ## Prerequisites
 
@@ -37,7 +37,7 @@ regenerates both JSONL files from scratch.
 ## Step 2 — Fine-tune on Google Colab (free GPU)
 
 1. Upload `finetune_colab.ipynb` to [Google Colab](https://colab.research.google.com) (File ->
-   Upload notebook), or open it directly from Google Drive.
+   Upload notebook, or open it directly from Google Drive.
 2. **Runtime -> Change runtime type -> Hardware accelerator -> T4 GPU.**
 3. Run the cells top to bottom:
    - Installs [Unsloth](https://github.com/unslothai/unsloth) for QLoRA fine-tuning.
@@ -49,7 +49,7 @@ regenerates both JSONL files from scratch.
      computer.
 4. Save the downloaded `.gguf` file into this project folder.
 
-This step is free but not instant — expect the training cell to take a while depending on Colab's
+This step is free but not instant — expect the training cell to take a while, depending on Colab's
 GPU availability at the time.
 
 ## Step 3 — Load the model into Ollama
