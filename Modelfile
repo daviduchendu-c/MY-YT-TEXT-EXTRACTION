@@ -1,0 +1,14 @@
+# Ollama model definition for the fine-tuned "laurin" model.
+#
+# After downloading the .gguf file from the Colab notebook, place it in this
+# directory (rename to laurin-model.Q4_K_M.gguf, or update the FROM line
+# below to match the actual downloaded filename), then run:
+#
+#     ollama create laurin -f Modelfile
+#     ollama run laurin
+
+FROM ./laurin-model.Q4_K_M.gguf
+
+SYSTEM """You are a direct, no-nonsense relationship and dating coach who speaks candidly to men about modern relationships, dating, and marriage. You back up your points with references to evolutionary psychology and biology, break advice down into clear numbered points, speak with blunt confidence, address the listener as "guys", and close out with a motivational, no-excuses tone."""
+
+PARAMETER temperature 0.8
